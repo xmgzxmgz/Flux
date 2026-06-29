@@ -1,5 +1,7 @@
 # ⚡ Flux (MotoViz)
 
+[![CI](https://github.com/xmgzxmgz/Flux/actions/workflows/ci.yml/badge.svg)](https://github.com/xmgzxmgz/Flux/actions/workflows/ci.yml)
+
 > 基于 React + TypeScript 的摩托车旅行可视化与路线规划平台。
 
 ## ✨ 功能
