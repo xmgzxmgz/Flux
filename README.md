@@ -1,57 +1,46 @@
-# React + TypeScript + Vite
+# ⚡ Flux (MotoViz)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 基于 React + TypeScript 的摩托车旅行可视化与路线规划平台。
 
-Currently, two official plugins are available:
+## ✨ 功能
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🗺️ 地图可视化 — 路线展示与标注
+- 🌓 暗色/亮色主题切换
+- 📱 响应式布局
+- 🏗️ 模块化架构 — 路由、布局、页面分离
 
-## Expanding the ESLint configuration
+## 🛠️ 技术栈
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **前端**: React 18 + TypeScript + Vite
+- **样式**: Tailwind CSS
+- **路由**: React Router v6
+- **构建**: Vite + pnpm
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 快速开始
+
+```bash
+pnpm install
+pnpm dev      # 开发服务器
+pnpm build    # 生产构建
+pnpm preview  # 预览构建结果
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📁 项目结构
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  extends: [
-    // other configs...
-    // Enable lint rules for React
-    reactX.configs['recommended-typescript'],
-    // Enable lint rules for React DOM
-    reactDom.configs.recommended,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
 ```
+src/
+├── components/     # 通用组件 (导航、布局)
+├── pages/          # 页面组件
+├── hooks/          # 自定义 Hooks (useTheme)
+├── features/       # 功能模块 (规划中)
+├── router.tsx      # 路由配置
+└── main.tsx        # 入口
+```
+
+## 📋 开发状态
+
+🚧 项目处于早期开发阶段，部分功能模块尚未实现。
+
+## 📄 License
+
+MIT
