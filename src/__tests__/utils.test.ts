@@ -16,7 +16,8 @@ describe('cn (className merge utility)', () => {
   })
 
   it('should handle conditional classes', () => {
-    const result = cn('base', false && 'hidden', 'visible')
+    const showHidden = false
+    const result = cn('base', showHidden && 'hidden', 'visible')
     expect(result).toContain('base')
     expect(result).toContain('visible')
     expect(result).not.toContain('hidden')
